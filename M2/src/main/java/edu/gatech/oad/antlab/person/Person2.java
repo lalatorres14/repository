@@ -31,19 +31,16 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	    string new = "";
-        Random rnd = new Random();
-        char c;
-        char[] newArray = char[input.length()];
-        int n
-        for (i = 0; i < input.length(); i++) {
-            int n = rand.nextInt(50) + 1;
-	        newArray()
-            c=s.charAt()
+        List<Character> characters = new ArrayList<Character>();
+        for(char c:input.toCharArray()){
+            characters.add(c);
         }
-
-
-	  return null;
+        StringBuilder output = new StringBuilder(input.length());
+        while(characters.size()!=0){
+            int randPicker = (int)(Math.random()*characters.size());
+            output.append(characters.remove(randPicker));
+        }
+        return output.toString();
 	}
 	/**
 	 * Return a string rep of this object
