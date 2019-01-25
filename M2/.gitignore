@@ -3,3 +3,6 @@
 
 # Ignore Gradle build output directory
 build
+
+# Mac generated setting files
+.DS_Store
